@@ -1,0 +1,22 @@
+# Dan Raveh (pixi.vc)
+
+> Dan Raveh is an Israeli entrepreneur and angel investor focused on fintech and AI. He is the founder and CEO of Efficio, a venture-backed company (Foundation Capital) that built AI-powered back-office risk operations for fintechs and banks. He is based in Tel Aviv and active in both Israel and the US.
+
+## Background
+
+- Founder & CEO, Efficio: AI platform automating back-office risk operations (card disputes, fraud, compliance) for fintechs and banks. Backed by Foundation Capital.
+- Pagaya: M&A and research operations at the AI-driven asset manager (NASDAQ: PGY).
+- Commerce Ventures: Principal at the San Francisco fintech VC (payments, retail tech, insurance).
+- Viola Private Equity: technology investments.
+- MBA, The Wharton School, University of Pennsylvania.
+- Five years as an officer in an elite Israeli intelligence unit.
+
+## Investing
+
+Dan angel invests in pre-seed and seed companies at the intersection of fintech and AI: financial infrastructure, AI agents for operational work, and B2B software. He helps founders with US fundraising, enterprise financial customers, and building from Israel for the US market.
+
+## Contact
+
+- Website: https://pixi.vc/
+- LinkedIn: https://www.linkedin.com/in/danraveh/
+- Crunchbase: https://www.crunchbase.com/person/dan-raveh
