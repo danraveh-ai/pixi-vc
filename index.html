@@ -8,19 +8,24 @@
 <link rel="canonical" href="https://pixi.vc/">
 <meta property="og:type" content="profile">
 <meta property="og:title" content="Dan Raveh | Entrepreneur, Angel Investor, Former Fintech VC">
-<meta property="og:description" content="Building and backing companies at the intersection of fintech and AI. Founder and CEO of Efficio, former Principal at Commerce Ventures.">
+<meta property="og:description" content="Building and backing companies at the intersection of fintech and AI. Co-founder and CEO of Efficio, former Principal at Commerce Ventures.">
 <meta property="og:url" content="https://pixi.vc/">
 <meta property="og:site_name" content="pixi.vc">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://pixi.vc/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Dan Raveh | Entrepreneur, Angel Investor, Former Fintech VC">
 <meta name="twitter:description" content="Building and backing companies at the intersection of fintech and AI.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%230f766e'/%3E%3Ctext x='16' y='21' font-family='Georgia,serif' font-size='15' fill='white' text-anchor='middle'%3Ep%3C/text%3E%3C/svg%3E">
+<meta name="twitter:image" content="https://pixi.vc/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%230f766e'/%3E%3Cstop offset='1' stop-color='%232563eb'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='16' cy='16' r='14' fill='url(%23g)'/%3E%3Ctext x='16' y='21' font-family='Georgia,serif' font-size='15' fill='white' text-anchor='middle'%3Ep%3C/text%3E%3C/svg%3E">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Dan Raveh",
   "url": "https://pixi.vc/",
+  "image": "https://pixi.vc/dan-raveh.png",
   "jobTitle": "Entrepreneur and Angel Investor",
   "description": "Dan Raveh is an Israeli entrepreneur and angel investor focused on fintech and AI. He is the co-founder and CEO of Efficio, was Head of AI Operations at Pagaya through its growth from Series D to public company, COO at Zencity and at Glimmer (formerly Storyhunter), a Principal at Commerce Ventures, a fintech VC with eight unicorns in its portfolio, and a Senior Analyst at Viola Growth. He holds an MBA from the Wharton School and a BA in economics and philosophy from Tel Aviv University, and served as an officer in an elite Israeli intelligence unit, where he led an operation awarded the Israel Defense Prize.",
   "worksFor": {
@@ -43,26 +48,32 @@
 </script>
 <style>
   :root {
-    --bg: #fbfaf8;
+    --bg: #faf9f7;
     --surface: #ffffff;
-    --ink: #1c1917;
-    --ink-soft: #57534e;
-    --ink-faint: #a8a29e;
-    --accent: #0f766e;
-    --accent-soft: #ccfbf1;
-    --line: #e7e5e4;
-    --max: 42rem;
+    --ink: #191714;
+    --ink-soft: #52504c;
+    --ink-faint: #a3a09b;
+    --teal: #0f766e;
+    --blue: #2563eb;
+    --accent-grad: linear-gradient(120deg, #0f766e, #2563eb);
+    --accent-soft: #e6f4f2;
+    --line: #e8e5e1;
+    --max: 46rem;
+    --ring: rgba(15, 118, 110, 0.25);
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #131110;
+      --bg: #12100f;
       --surface: #1c1917;
-      --ink: #f5f5f4;
-      --ink-soft: #c7c2bd;
-      --ink-faint: #78716c;
-      --accent: #2dd4bf;
-      --accent-soft: #134e4a;
+      --ink: #f5f4f2;
+      --ink-soft: #c9c5c0;
+      --ink-faint: #7a766f;
+      --teal: #2dd4bf;
+      --blue: #60a5fa;
+      --accent-grad: linear-gradient(120deg, #2dd4bf, #60a5fa);
+      --accent-soft: #10312d;
       --line: #2c2825;
+      --ring: rgba(45, 212, 191, 0.3);
     }
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -75,6 +86,7 @@
     font-size: 1.0625rem;
     -webkit-font-smoothing: antialiased;
   }
+  .topbar { height: 4px; background: var(--accent-grad); }
   .wrap { max-width: var(--max); margin: 0 auto; padding: 0 1.5rem; }
   header.site {
     display: flex; justify-content: space-between; align-items: center;
@@ -82,67 +94,128 @@
   }
   .brand {
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 1.15rem; letter-spacing: 0.01em;
+    font-size: 1.2rem; letter-spacing: 0.01em;
     color: var(--ink); text-decoration: none;
   }
-  .brand span { color: var(--accent); }
+  .brand span {
+    background: var(--accent-grad);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent; color: transparent;
+  }
+  nav { display: flex; align-items: center; gap: 1.25rem; }
   nav a {
     color: var(--ink-soft); text-decoration: none; font-size: 0.95rem;
-    margin-left: 1.25rem;
   }
-  nav a:hover { color: var(--accent); }
-  .hero { padding: 4.5rem 0 3.5rem; }
+  nav a:hover { color: var(--teal); }
+  nav a.cta {
+    color: #fff; background: var(--accent-grad);
+    padding: 0.45rem 1rem; border-radius: 999px; font-weight: 600;
+  }
+  nav a.cta:hover { opacity: 0.9; color: #fff; }
+
+  .hero {
+    display: grid; grid-template-columns: 1fr auto; gap: 2.5rem;
+    align-items: center; padding: 4rem 0 3.5rem;
+  }
   .kicker {
-    font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.14em;
-    color: var(--accent); font-weight: 600; margin-bottom: 1rem;
+    font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.16em;
+    font-weight: 700; margin-bottom: 1rem;
+    background: var(--accent-grad);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent; color: transparent;
+    display: inline-block;
   }
   h1 {
     font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(2.4rem, 6vw, 3.4rem);
-    line-height: 1.1; font-weight: 500; letter-spacing: -0.01em;
+    font-size: clamp(2.8rem, 7vw, 4.2rem);
+    line-height: 1.05; font-weight: 500; letter-spacing: -0.015em;
     margin-bottom: 1.25rem;
   }
-  .hero p.lede { font-size: 1.2rem; color: var(--ink-soft); max-width: 36rem; }
-  .hero .loc { margin-top: 1.5rem; font-size: 0.95rem; color: var(--ink-faint); }
-  section { padding: 2.75rem 0; border-top: 1px solid var(--line); }
+  .hero p.lede { font-size: 1.2rem; color: var(--ink-soft); max-width: 34rem; }
+  .hero .loc { margin-top: 1.35rem; font-size: 0.95rem; color: var(--ink-faint); }
+  .hero-ctas { display: flex; gap: 0.75rem; margin-top: 1.6rem; flex-wrap: wrap; }
+  .btn {
+    display: inline-block; text-decoration: none; font-weight: 600; font-size: 0.98rem;
+    border-radius: 0.65rem; padding: 0.65rem 1.25rem;
+  }
+  .btn-primary { color: #fff; background: var(--accent-grad); }
+  .btn-primary:hover { opacity: 0.9; }
+  .btn-ghost { color: var(--teal); border: 1.5px solid var(--line); background: var(--surface); }
+  .btn-ghost:hover { border-color: var(--teal); }
+  .portrait {
+    width: 200px; height: 200px; border-radius: 50%;
+    padding: 5px; background: var(--accent-grad);
+    box-shadow: 0 12px 40px var(--ring);
+  }
+  .portrait img {
+    width: 100%; height: 100%; border-radius: 50%; display: block;
+    object-fit: cover; background: var(--surface);
+  }
+
+  section { padding: 2.9rem 0; border-top: 1px solid var(--line); }
   h2 {
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 1.5rem; font-weight: 500; margin-bottom: 1.25rem;
+    font-size: 1.6rem; font-weight: 500; margin-bottom: 1.4rem;
   }
-  section p { color: var(--ink-soft); max-width: 38rem; }
+  h2::after {
+    content: ""; display: block; width: 2.6rem; height: 3px;
+    background: var(--accent-grad); border-radius: 2px; margin-top: 0.55rem;
+  }
+  section p { color: var(--ink-soft); max-width: 40rem; }
   section p + p { margin-top: 0.9rem; }
-  .roles { list-style: none; margin-top: 0.5rem; }
+
+  .now-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 0.4rem; }
+  .now-card {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 0.9rem;
+    padding: 1.2rem 1.2rem 1.1rem;
+  }
+  .now-card h3 {
+    font-size: 1.02rem; font-weight: 700; margin-bottom: 0.4rem;
+    background: var(--accent-grad);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent; color: transparent;
+    display: inline-block;
+  }
+  .now-card p { font-size: 0.95rem; color: var(--ink-soft); }
+
+  .roles { list-style: none; margin-top: 1.4rem; }
   .roles li {
-    display: grid; grid-template-columns: 11rem 1fr; gap: 1rem;
+    display: grid; grid-template-columns: 11.5rem 1fr; gap: 1rem;
     padding: 1rem 0; border-bottom: 1px solid var(--line);
   }
   .roles li:last-child { border-bottom: none; }
-  .roles .org { font-weight: 600; color: var(--ink); }
+  .roles .org { font-weight: 700; color: var(--ink); }
   .roles .what { color: var(--ink-soft); font-size: 0.98rem; }
+
   .pills { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.25rem; }
   .pills span {
-    background: var(--accent-soft); color: var(--accent);
-    border-radius: 999px; padding: 0.3rem 0.85rem; font-size: 0.85rem; font-weight: 600;
+    background: var(--accent-soft); color: var(--teal);
+    border-radius: 999px; padding: 0.35rem 0.95rem; font-size: 0.87rem; font-weight: 600;
   }
-  @media (prefers-color-scheme: dark) { .pills span { color: #99f6e4; } }
-  .contact-links { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.5rem; }
-  .contact-links a {
-    display: inline-block; text-decoration: none; font-weight: 600; font-size: 0.98rem;
-    color: var(--accent); border: 1px solid var(--line); border-radius: 0.6rem;
-    padding: 0.6rem 1.1rem; background: var(--surface);
-  }
-  .contact-links a:hover { border-color: var(--accent); }
+  .contact-links { display: flex; flex-wrap: wrap; gap: 0.9rem; margin-top: 1.5rem; }
   footer {
     border-top: 1px solid var(--line);
     padding: 2rem 0 3rem; color: var(--ink-faint); font-size: 0.9rem;
   }
-  @media (max-width: 600px) {
+
+  @media (prefers-reduced-motion: no-preference) {
+    .rise { opacity: 0; transform: translateY(14px); animation: rise 0.7s ease-out forwards; }
+    .rise.d1 { animation-delay: 0.08s; }
+    .rise.d2 { animation-delay: 0.16s; }
+    .rise.d3 { animation-delay: 0.24s; }
+    @keyframes rise { to { opacity: 1; transform: none; } }
+  }
+
+  @media (max-width: 680px) {
+    .hero { grid-template-columns: 1fr; gap: 1.8rem; padding-top: 2.5rem; }
+    .portrait { width: 140px; height: 140px; order: -1; }
+    .now-grid { grid-template-columns: 1fr; }
     .roles li { grid-template-columns: 1fr; gap: 0.15rem; }
-    nav a { margin-left: 0.9rem; }
   }
 </style>
 </head>
 <body>
+<div class="topbar"></div>
 <div class="wrap">
 
   <header class="site">
@@ -150,17 +223,42 @@
     <nav aria-label="Main">
       <a href="#about">About</a>
       <a href="#investing">Investing</a>
-      <a href="#contact">Contact</a>
+      <a class="cta" href="mailto:danraveh@gmail.com">Say hi</a>
     </nav>
   </header>
 
   <main>
     <div class="hero">
-      <div class="kicker">Entrepreneur. Angel Investor. Former VC.</div>
-      <h1>Dan Raveh</h1>
-      <p class="lede">I build and back companies at the intersection of fintech and AI. Co-founder and CEO of Efficio. Before that, a fintech VC at Commerce Ventures and an operator from seed stage to public company at Glimmer, Zencity and Pagaya.</p>
-      <p class="loc">Tel Aviv and New York.</p>
+      <div>
+        <div class="kicker rise">Entrepreneur. Angel Investor. Former VC.</div>
+        <h1 class="rise d1">Dan Raveh</h1>
+        <p class="lede rise d2">I build and back companies at the intersection of fintech and AI. Co-founder and CEO of Efficio. Before that, a fintech VC at Commerce Ventures and an operator from seed stage to public company at Glimmer, Zencity and Pagaya.</p>
+        <p class="loc rise d2">Tel Aviv and New York.</p>
+        <div class="hero-ctas rise d3">
+          <a class="btn btn-primary" href="mailto:danraveh@gmail.com">Email me</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/danraveh/" rel="me">LinkedIn</a>
+        </div>
+      </div>
+      <div class="portrait rise d1"><img src="dan-raveh.png" alt="Dan Raveh" width="460" height="460"></div>
     </div>
+
+    <section id="now">
+      <h2>Now</h2>
+      <div class="now-grid">
+        <div class="now-card">
+          <h3>Building</h3>
+          <p>Exploring my next company, where AI agents meet real financial operations.</p>
+        </div>
+        <div class="now-card">
+          <h3>Investing</h3>
+          <p>Writing pre-seed and seed checks into founders building in fintech and AI.</p>
+        </div>
+        <div class="now-card">
+          <h3>Advising</h3>
+          <p>Helping fintech and AI teams with go-to-market, operations, and US expansion.</p>
+        </div>
+      </div>
+    </section>
 
     <section id="about">
       <h2>About</h2>
@@ -197,9 +295,9 @@
       <h2>Contact</h2>
       <p>The best way to reach me is email or LinkedIn. If you are a founder building in fintech or AI, I read every note.</p>
       <div class="contact-links">
-        <a href="mailto:danraveh@gmail.com">Email</a>
-        <a href="https://www.linkedin.com/in/danraveh/" rel="me">LinkedIn</a>
-        <a href="https://www.crunchbase.com/person/dan-raveh" rel="me">Crunchbase</a>
+        <a class="btn btn-primary" href="mailto:danraveh@gmail.com">Email</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/danraveh/" rel="me">LinkedIn</a>
+        <a class="btn btn-ghost" href="https://www.crunchbase.com/person/dan-raveh" rel="me">Crunchbase</a>
       </div>
     </section>
   </main>
