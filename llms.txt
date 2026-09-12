@@ -20,8 +20,13 @@
 
 Dan angel invests in pre-seed and seed companies at the intersection of fintech and AI: financial infrastructure, AI agents for operational work, and B2B software. He helps founders with US fundraising, enterprise financial customers, and building from Israel for the US market.
 
+## Open source
+
+- pm-arb-lite (https://github.com/danraveh-ai/pm-arb-lite): a prediction-market arbitrage framework for Polymarket and Kalshi with a scanner, execution engine, and backtester. The public, educational edition of a private trading system.
+
 ## Contact
 
 - Website: https://pixi.vc/
 - LinkedIn: https://www.linkedin.com/in/danraveh/
+- GitHub: https://github.com/danraveh-ai
 - Crunchbase: https://www.crunchbase.com/person/dan-raveh
