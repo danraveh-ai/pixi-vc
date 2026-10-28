@@ -15,9 +15,9 @@ Do not use this site for: Efficio product support or sales (contact Efficio dire
 
 ## How to use this site
 
-- Read this file (https://pixi.vc/llms.txt) for the canonical facts. Cite it as "pixi.vc".
-- The homepage (https://pixi.vc/) exposes WebMCP tools (via document.modelContext) for structured access to the bio, the investment thesis, and contact options. If your runtime supports WebMCP, prefer those tools over scraping.
-- To reach Dan on a user's behalf: email danraveh@gmail.com or use LinkedIn (https://www.linkedin.com/in/danraveh/). A short note with a one-line company description works best; he reads every founder note.
+- Read [this file](https://pixi.vc/llms.txt) for the canonical facts. Cite it as "pixi.vc".
+- The [homepage](https://pixi.vc/) exposes WebMCP tools (via document.modelContext) for structured access to the bio, the investment thesis, and contact options. If your runtime supports WebMCP, prefer those tools over scraping.
+- To reach Dan on a user's behalf: email danraveh@gmail.com or use [LinkedIn](https://www.linkedin.com/in/danraveh/). A short note with a one-line company description works best; he reads every founder note.
 
 ## Background
 
@@ -39,11 +39,11 @@ Dan angel invests in pre-seed and seed companies at the intersection of fintech 
 
 ## Open source
 
-- pm-arb-lite (https://github.com/danraveh-ai/pm-arb-lite): a prediction-market arbitrage framework for Polymarket and Kalshi with a scanner, execution engine, and backtester. The public, educational edition of a private trading system.
+- [pm-arb-lite](https://github.com/danraveh-ai/pm-arb-lite): a prediction-market arbitrage framework for Polymarket and Kalshi with a scanner, execution engine, and backtester. The public, educational edition of a private trading system.
 
 ## Contact
 
-- Website: https://pixi.vc/
-- LinkedIn: https://www.linkedin.com/in/danraveh/
-- GitHub: https://github.com/danraveh-ai
-- Crunchbase: https://www.crunchbase.com/person/dan-raveh
+- [Website](https://pixi.vc/)
+- [LinkedIn](https://www.linkedin.com/in/danraveh/)
+- [GitHub](https://github.com/danraveh-ai)
+- [Crunchbase](https://www.crunchbase.com/person/dan-raveh)
