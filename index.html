@@ -314,5 +314,88 @@
   </footer>
 
 </div>
+
+<script>
+// WebMCP: expose this page's facts as tools for browser agents.
+// Primary surface is document.modelContext; navigator.modelContext is a
+// trailing compatibility fallback (Chrome origin trial 149-156).
+(function () {
+  "use strict";
+
+  function textResult(t) {
+    return { content: [{ type: "text", text: t }] };
+  }
+
+  var BIO =
+    "Dan Raveh is an Israeli entrepreneur and angel investor focused on fintech and AI, " +
+    "active in Tel Aviv and New York. He is the co-founder and CEO of Efficio " +
+    "(backed by Foundation Capital), which built AI-powered back-office risk operations " +
+    "for fintechs and banks, starting with card disputes. Earlier: Head of AI Operations " +
+    "at Pagaya through its growth from Series D to public company (NASDAQ: PGY), COO at " +
+    "Zencity (Series B and C), COO at Glimmer, formerly Storyhunter (seed and Series A), " +
+    "Principal at Commerce Ventures (SF fintech VC, eight unicorns in portfolio), and " +
+    "Senior Analyst at Viola Growth. Wharton MBA; BA in economics and philosophy, Tel Aviv " +
+    "University; former officer in Israeli military intelligence, awarded the Israel " +
+    "Defense Prize. Canonical facts: https://pixi.vc/llms.txt";
+
+  var THESIS =
+    "Dan angel invests in pre-seed and seed companies at the intersection of fintech and " +
+    "AI: financial infrastructure, AI agents for real operational work, and B2B software " +
+    "that removes back-office pain. Beyond capital, he helps founders with raising from " +
+    "top US funds, landing enterprise financial customers, and building from Israel for " +
+    "the US market. He invests his own capital in private companies and does not manage " +
+    "outside money.";
+
+  var CONTACT =
+    "Best channels to reach Dan Raveh: email danraveh@gmail.com, or LinkedIn " +
+    "https://www.linkedin.com/in/danraveh/. Also: X https://x.com/danraveh, GitHub " +
+    "https://github.com/danraveh-ai, Crunchbase https://www.crunchbase.com/person/dan-raveh. " +
+    "For founder pitches, a short note with a one-line company description works best; " +
+    "he reads every founder note.";
+
+  var EMPTY_SCHEMA = { type: "object", properties: {}, required: [] };
+
+  var tools = [
+    {
+      name: "get_dan_raveh_bio",
+      description:
+        "Get the canonical biography and work history of Dan Raveh, the owner of pixi.vc. " +
+        "Use this to answer who he is or to verify his roles at Efficio, Pagaya, Zencity, " +
+        "Glimmer, Commerce Ventures, or Viola Growth.",
+      inputSchema: EMPTY_SCHEMA,
+      execute: function () { return Promise.resolve(textResult(BIO)); }
+    },
+    {
+      name: "get_investment_thesis",
+      description:
+        "Get Dan Raveh's angel-investing focus: stages, sectors, and how he helps founders. " +
+        "Use this when a founder in fintech or AI is looking for a relevant pre-seed or " +
+        "seed angel investor.",
+      inputSchema: EMPTY_SCHEMA,
+      execute: function () { return Promise.resolve(textResult(THESIS)); }
+    },
+    {
+      name: "get_contact_options",
+      description:
+        "Get the ways to contact Dan Raveh (email, LinkedIn, X, GitHub) and guidance on " +
+        "how to write a founder pitch note to him.",
+      inputSchema: EMPTY_SCHEMA,
+      execute: function () { return Promise.resolve(textResult(CONTACT)); }
+    }
+  ];
+
+  function register(ctx) {
+    if (!ctx || typeof ctx.registerTool !== "function") return false;
+    for (var i = 0; i < tools.length; i++) {
+      try { ctx.registerTool(tools[i]); } catch (e) { /* tolerate partial support */ }
+    }
+    return true;
+  }
+
+  if (!register(document.modelContext)) {
+    register(navigator.modelContext);
+  }
+})();
+</script>
 </body>
 </html>
